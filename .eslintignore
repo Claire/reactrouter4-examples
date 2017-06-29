@@ -1,0 +1,9 @@
+node_modules/*
+build/*
+coverage/*
+dist/*
+client-react/dist/*
+nodejs/*
+vendor/*
+client-react/src/components/node/*
+qb_lib/*

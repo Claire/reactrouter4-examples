@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.fade-enter {
+  opacity: 0.01;
+  max-height:0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  max-height:100%;
+  transition-property: opacity, left;
+  transition-duration: 800ms;
+  transition-timing-function: linear;
+}
+
+
+.fade-leave {
+  opacity: 1;
+  z-index: 1;
+  max-height:100%;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  max-height:0%;
+  transition-property: opacity, max-height;
+  transition-duration: 800ms;
+  transition-timing-function: linear;
+}
+
+.footer {
+  font-size :50%;
+  color: grey;
+  position: fixed;
+  bottom : 10px;
+  left : 50%;
+}
